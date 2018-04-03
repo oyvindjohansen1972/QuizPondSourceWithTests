@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2005
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuizPond", "QuizPond\QuizPond.csproj", "{26D2C9B2-4FEE-4018-A325-F9EAEA430525}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "QuizPond.Tests", "QuizPond.Tests\QuizPond.Tests.csproj", "{8B26555C-F8D8-4C51-B5D7-58869ED9D71A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{26D2C9B2-4FEE-4018-A325-F9EAEA430525}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26D2C9B2-4FEE-4018-A325-F9EAEA430525}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26D2C9B2-4FEE-4018-A325-F9EAEA430525}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26D2C9B2-4FEE-4018-A325-F9EAEA430525}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B26555C-F8D8-4C51-B5D7-58869ED9D71A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B26555C-F8D8-4C51-B5D7-58869ED9D71A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B26555C-F8D8-4C51-B5D7-58869ED9D71A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B26555C-F8D8-4C51-B5D7-58869ED9D71A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BD9C96EE-FABF-4FF9-AE73-505F3B207646}
+	EndGlobalSection
+EndGlobal
