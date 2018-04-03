@@ -1,0 +1,17 @@
+﻿@model VerifyDeleteQuizVM
+
+
+<div class="text-center">    
+    <h4>Are you sure you want to delete:</h4>
+    <br />
+    <h4>@Model.NameOfQuiz ?</h4>
+    <br />   
+    <form asp-action="VerifyDeleteQuiz" method="post">
+        <input asp-for="@Model.QuizId" type="hidden" />
+        <input asp-for="@Model.NameOfQuiz" type="hidden" />
+        <button name="YesNo" value="Yes" class="btn btn-danger">Yes</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <button name="YesNo" value="No" class="btn btn-primary">No</button>
+    </form>  
+</div>
+

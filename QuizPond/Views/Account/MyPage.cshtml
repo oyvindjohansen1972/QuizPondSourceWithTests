@@ -1,0 +1,25 @@
+﻿@model MyPageVM
+
+<div class="text-center">    
+    <h4>My quizzes</h4>
+    <br /><br />         
+    <table class="table table-striped">
+        <tbody>
+            @foreach (var item in Model.MyQuizzes)
+            {
+                <tr>
+                    <td class="text-center">
+                        <h4>@item.QuizName</h4>
+                        <a asp-controller="Account" asp-action="ShowAnswersInSummary" asp-route-id="@item.QuizId" asp-route-name="@item.QuizName" class="btn btn-primary">Start Quiz</a>                        
+                        @if (@item.HasStartedNewGames)
+                        {
+                            <a asp-controller="Account" asp-action="ShowPlayers" asp-route-id="@item.QuizId" class="btn btn-primary">Show Players</a>
+                        }
+                        <a asp-controller="Account" asp-action="VerifyDeleteQuiz" asp-route-QuizId="@item.QuizId" asp-route-NameOfQuiz="@item.QuizName" class="btn btn-primary">Delete</a>
+                    </td>
+                </tr>                  
+            }
+        </tbody>
+    </table>
+</div>
+

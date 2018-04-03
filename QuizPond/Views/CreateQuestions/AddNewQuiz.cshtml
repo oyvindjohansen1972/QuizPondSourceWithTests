@@ -1,0 +1,20 @@
+﻿@model AddNewQuizVM
+
+
+<div class="text-center">     
+    <h4>Create a name for your new quiz</h4>
+    <br />
+    <form asp-action="AddNewQuiz" method="post">              
+        <div class="row form-group justify-content-center">
+            <input asp-for="QuizName" placeholder="Enter quizname here" class="form-control" style="width: 11.0em;" />
+        </div>
+        <br />
+        <div class="row justify-content-center">
+            <button class="btn btn-primary" type="submit">Next</button>
+        </div>
+    </form>
+</div>
+
+
+
+

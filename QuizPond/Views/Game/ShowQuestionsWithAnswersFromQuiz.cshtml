@@ -1,0 +1,55 @@
+﻿@model ShowQuestionsWithAnswersFromQuizVM
+
+
+<div class="container">
+    <form asp-action="run" method="post">
+        <div class="text-center">
+            <h4>@Model.QuizName</h4>
+            <br />
+            <h4>Summary of Your Quiz</h4>
+            <hr />
+        @if (Model.ShowAnswersToPlayer)
+        {
+            @foreach (var question in Model.questionsWithAnswers)
+            {
+                <div class="text-center">
+                    <hr />
+                    <h4>
+                        @question.QuestionNr &nbsp; &nbsp; @question.QuestionString &nbsp; &nbsp;
+                    </h4>
+                        @if (question.AnswerGivenByPlayer != question.CorrectAnswer)
+                        {                 
+                    <h4 class="text-center text-danger">
+                        Your answer is wrong: @question.AnswerGivenByPlayer<br />
+                    </h4>
+                    <h4 >
+                        The correct answer is: @question.CorrectAnswer
+                    </h4>                    
+                        }
+                        else
+                        {
+                    <h4 class="text-center text-success">
+                        Your answer is correct: @question.AnswerGivenByPlayer
+                    </h4>
+                        }                   
+                </div>
+            }
+        }
+        else
+        {
+            @foreach (var question in Model.questionsWithAnswers)
+            {
+                <div>                    
+                    <h4>
+                        @question.QuestionNr &nbsp; &nbsp; @question.QuestionString &nbsp; &nbsp;
+                    </h4>
+                    <h4 class="text-center text-left">
+                        Your answer was: @question.AnswerGivenByPlayer<br />
+                    </h4>
+                    <hr />
+                </div>
+            }
+        }
+        </div>
+    </form>
+</div>

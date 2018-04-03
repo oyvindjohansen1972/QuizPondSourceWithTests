@@ -1,0 +1,36 @@
+﻿@model ShowPlayersVM
+
+
+<div class="text-center">    
+    <h4>QuizName:
+    <br />
+    @Model.QuizName</h4>
+    <br />     
+    <a asp-controller="Account" asp-action="PreviewAllQuestionsWithAnswers" asp-route-gameCode="@Model.PlayersAndGameCode.ElementAt(0).GameCode" asp-route-quizName="@Model.QuizName" class="btn btn-primary">Preview quiz</a>
+    <br /><br />    
+    @foreach (var item1 in Model.PlayersAndGameCode)
+    {                
+        <div class="text-center">
+            <h2 style="margin: 0 auto; background-color:deepskyblue;">Code: @item1.GameCode</h2>                       
+        </div>
+        <table class="table m-0 p-0">
+            <thead style=" background-color:azure;">
+                <tr>                              
+                        <th class="text-right w-50"><h4>Score</h4></th>
+                        <th class="text-left w-50"><h4>Player</h4></th>                                                              
+                </tr>
+            </thead>
+            <tbody>                             
+                @foreach (var item2 in item1.Players)
+                {  
+                <tr>
+                    <td class="text-right w-50"><h5>@item2.GameScore</h5></td>
+                    <td class="text-left w-50"><h5>@item2.Name</h5></td>
+                </tr>
+                }                           
+            </tbody>
+        </table>               
+    }     
+</div>
+
+

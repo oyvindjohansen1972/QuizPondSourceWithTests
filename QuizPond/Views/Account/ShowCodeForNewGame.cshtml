@@ -1,0 +1,13 @@
+﻿@model ShowCodeForNewGameVM
+
+
+<div class="text-center">    
+    <h4>@Model.NameOfQuiz</h4>
+    <br /><br />
+    <h2 style="background-color:aliceblue;">@Model.GameCode</h2>
+    <br /><br />
+    <div>
+        <a asp-controller="Main" asp-action="Index" class="btn btn-primary">Ok</a>
+    </div>        
+</div>
+

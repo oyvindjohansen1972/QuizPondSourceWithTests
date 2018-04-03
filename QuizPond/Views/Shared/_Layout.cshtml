@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="free, quiz, quizzes, fun, christmas, easter, winter, summer, mobile, phone">
+        <meta name="description" content="Host free quizzes, quiz competition, free games on your cell phone or mobile device for Android and iPhone.">
+        <title>Host quizzes for your friends to play on their cell phone or computer | QuizPond</title>
+        <link rel="stylesheet" asp-href-include="/lib/bootstrap/dist/css/bootstrap-journal.min.css" />
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+            <a class="navbar-brand mr-auto" asp-action="Index" asp-controller="Main">
+                <img src="~/BrandImage.jpg" height="28" class="d-lg-inline-block align-items-center" alt="" />
+                QuizPond
+            </a>
+            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarsupportedcontent" aria-controls="navbarsupportedcontent" aria-expanded="false" aria-label="toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarsupportedcontent">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" asp-action="MyPage" asp-controller="Account">My quizzes</a>
+                    <a class="nav-item nav-link" asp-action="AddNewQuiz" asp-controller="CreateQuestions">Create new quiz</a>
+                    @await Html.PartialAsync("LoginPartial")
+                </div>
+            </div>
+        </nav>
+        <div>
+            <br />
+            @RenderBody()
+        </div>
+        @*<div class="fixed-bottom text-center" style="font-size: x-small">
+                <p> © @DateTime.Now.Year QuizPond </p>
+        </div>*@
+        <script src="~/lib/jquery/dist/jquery.min.js"></script>
+        <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>       
+    </body>
+</html>
+
+
+
+
+
+
+
+
+

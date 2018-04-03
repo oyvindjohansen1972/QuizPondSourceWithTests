@@ -1,0 +1,43 @@
+﻿@model NewQuestionVM
+
+
+<div class="text-center">
+    <form asp-action="Add" method="post">        
+        <h6>@Model.QuestionNr</h6>
+        <input asp-for="QuestionNr" type="hidden" />                   
+        <div asp-validation-summary="All" class="text-danger"></div>
+        <h4>Add a new question to your quiz</h4>
+        <br />
+        <div class="row form-group justify-content-center">
+            <textarea class="form-control" asp-for="QuestionString" rows="3" placeholder="Enter question..." style="width:77%"></textarea>
+        </div>
+        <br />
+        <div class="form-inline form-group justify-content-center">
+            <input asp-for="RadioButtonAlternativeAnswer" type="radio" value="0" class="m-3" />
+            <input asp-for="Answer1" placeholder="Alternative Answer" class="form-control" style="width:70%; line-height:normal;" />
+        </div>
+        <div class="form-inline form-group justify-content-center">
+            <input asp-for="RadioButtonAlternativeAnswer" type="radio" value="1" class="m-3" />
+            <input asp-for="Answer2" placeholder="Alternative Answer" class="form-control" style="width:70%" />
+        </div>
+        <div class="form-inline form-group justify-content-center">
+            <input asp-for="RadioButtonAlternativeAnswer" type="radio" value="2" class="m-3" />
+            <input asp-for="Answer3" placeholder="Alternative Answer" class="form-control" style="width:70%" />
+        </div>
+        <div class="form-inline form-group justify-content-center">
+            <input asp-for="RadioButtonAlternativeAnswer" type="radio" value="3" class="m-3" />
+            <input asp-for="Answer4" placeholder="Alternative Answer" class="form-control" style="width:70%" />
+        </div>
+        <br />
+        @if (Model.QuestionNr > 1)
+        {
+            <button name="buttonBack" value="back" class="btn btn-primary">Back</button>
+        }
+        <button name="buttonFinished" value="finished" class="btn btn-primary">Finished</button>
+        <button name="buttonNext" value="next" class="btn btn-primary">Next</button>
+        <br /><br /> 
+    </form>
+</div>
+
+
+

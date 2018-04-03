@@ -1,0 +1,22 @@
+﻿@model PreviewAllQuestionsWithAnswersVM
+
+
+<div class="container">
+    <form asp-action="run" method="post">
+        <div class="text-center">            
+            <h3>@Model.QuizName</h3>                   
+            @foreach (var question in Model.questionsWithAnswers)
+            {
+            <div class="text-center">
+                <hr />
+                <h5>
+                    @question.QuestionNr. @question.QuestionString
+                </h5>
+                <h5 class="text-success">
+                    @question.CorrectAnswer
+                </h5>
+            </div>
+            }
+        </div>
+    </form>
+</div>

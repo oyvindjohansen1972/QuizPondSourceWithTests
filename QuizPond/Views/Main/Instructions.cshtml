@@ -1,0 +1,29 @@
+﻿@model PlayerInfoVM
+
+<div class="container">
+    <div class="text-center">       
+        <h4>Welcome to
+        <br />
+            @Model.QuizName
+        </h4>   
+        <br />
+        <h5 class="m-3">
+            Each question has <em>one</em> correct answer.
+            You can move forward and backward to edit your answers,
+            but when you have submitted the answers, you
+            can not go back to make any more changes.
+            <br /> <br /> 
+            Good Luck!
+        </h5>
+        <br />
+        <form asp-controller="Game" asp-action="InitGame" method="post">           
+            <input asp-for="QuizName" type="hidden" />
+            <input asp-for="GameCode" type="hidden" />
+            <input asp-for="NickName" type="hidden" />
+            <div class="row justify-content-center">
+                <button class="btn btn-primary" type="submit">Start quiz</button>
+            </div>
+            <br /><br />
+        </form>
+    </div>
+</div>

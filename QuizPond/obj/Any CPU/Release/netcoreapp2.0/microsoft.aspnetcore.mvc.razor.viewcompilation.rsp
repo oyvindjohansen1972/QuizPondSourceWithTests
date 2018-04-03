@@ -1,0 +1,24 @@
+C:\Users\ojo\source\repos\QuizPond\QuizPond
+--output-path=obj\Any CPU\Release\netcoreapp2.0\
+--application-name=QuizPond
+--content-root=C:\Users\ojo\source\repos\QuizPond\QuizPond
+--file=C:\Users\ojo\source\repos\QuizPond\QuizPond\Views\Account\Login.cshtml
+--file=C:\Users\ojo\source\repos\QuizPond\QuizPond\Views\Account\MyPage.cshtml
+--file=C:\Users\ojo\source\repos\QuizPond\QuizPond\Views\Account\PreviewAllQuestionsWithAnswers.cshtml
+--file=C:\Users\ojo\source\repos\QuizPond\QuizPond\Views\Account\Register.cshtml
+--file=C:\Users\ojo\source\repos\QuizPond\QuizPond\Views\Account\ShowAnswersInSummary.cshtml
+--file=C:\Users\ojo\source\repos\QuizPond\QuizPond\Views\Account\ShowCodeForNewGame.cshtml
+--file=C:\Users\ojo\source\repos\QuizPond\QuizPond\Views\Account\ShowPlayers.cshtml
+--file=C:\Users\ojo\source\repos\QuizPond\QuizPond\Views\Account\VerifyDeleteQuiz.cshtml
+--file=C:\Users\ojo\source\repos\QuizPond\QuizPond\Views\CreateQuestions\Add.cshtml
+--file=C:\Users\ojo\source\repos\QuizPond\QuizPond\Views\CreateQuestions\AddNewQuiz.cshtml
+--file=C:\Users\ojo\source\repos\QuizPond\QuizPond\Views\Game\Run.cshtml
+--file=C:\Users\ojo\source\repos\QuizPond\QuizPond\Views\Game\ShowQuestionsWithAnswersFromQuiz.cshtml
+--file=C:\Users\ojo\source\repos\QuizPond\QuizPond\Views\Main\CreateNickname.cshtml
+--file=C:\Users\ojo\source\repos\QuizPond\QuizPond\Views\Main\Index.cshtml
+--file=C:\Users\ojo\source\repos\QuizPond\QuizPond\Views\Main\Instructions.cshtml
+--file=C:\Users\ojo\source\repos\QuizPond\QuizPond\Views\Main\ShowNewQuizStored.cshtml
+--file=C:\Users\ojo\source\repos\QuizPond\QuizPond\Views\Shared\LoginPartial.cshtml
+--file=C:\Users\ojo\source\repos\QuizPond\QuizPond\Views\Shared\_Layout.cshtml
+--file=C:\Users\ojo\source\repos\QuizPond\QuizPond\Views\_ViewImports.cshtml
+--file=C:\Users\ojo\source\repos\QuizPond\QuizPond\Views\_ViewStart.cshtml

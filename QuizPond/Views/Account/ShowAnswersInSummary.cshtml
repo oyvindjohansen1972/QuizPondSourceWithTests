@@ -1,0 +1,18 @@
+﻿@model ShowCodeForNewGameVM
+
+
+<div class="text-center">
+    <form method="post" asp-action="ShowCodeForNewGame" asp-controller="Account">        
+        <h4>@Model.NameOfQuiz</h4>
+        <br /><br />
+        <input asp-for="@Model.GameCode" type="hidden" />
+        <input asp-for="@Model.NameOfQuiz" type="hidden" />
+        <input asp-for="@Model.QuizId" type="hidden" />
+        <h4><input asp-for="ShowAnswers" /> Show player the correct answers after the quiz is finished.</h4>
+        <br /><br />
+        <div>
+            <button class="btn btn-primary" type="submit">Show gamecode</button>
+        </div>
+    </form>
+</div>
+

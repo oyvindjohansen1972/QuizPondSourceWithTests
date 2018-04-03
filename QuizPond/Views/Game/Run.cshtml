@@ -1,0 +1,47 @@
+﻿@model ShowQuestionsVM
+    
+
+<form asp-action="run" method="post">
+    <div class="text-center">         
+        <h6>@Model.Page of @Model.TotalPages</h6>
+        <br />
+        <h4>@Model.QuestionString</h4>
+        <br />
+        <div asp-validation-summary="All" class="text-danger"></div>      
+        <input type="hidden" name="page" value="@Model.Page" />
+        @for (int count = 0; count < Model.ListOfAnswers.Count; count++)
+        {
+            @if (@count == Model.RadioButtonChosenAlternativeAnswer)
+            {                
+                <h4><label><input id="radioButton" name="radioButton" type="radio" value="@count " checked="checked" class="mr-2" />@Model.ListOfAnswers.ElementAt(count).AnswerText</label></h4>                            
+            }
+            else
+            {                
+                <h4><label><input id="radioButton" name="radioButton" type="radio" value="@count" class="mr-2" />@Model.ListOfAnswers.ElementAt(count).AnswerText</label></h4>
+            }
+        }
+
+        <div class="form-group form-horizontal container text-center" role="form">
+            @if (Model.Page != 1)
+            {
+                    <button name="buttonBack" value="Back" class="btn btn-primary">Back</button>
+            }               
+            @if (Model.Page != Model.TotalPages)
+            {
+                <button name="buttonNext" value="Next" class="btn btn-primary">Next question</button>
+            }
+            else
+            {
+                <button name="buttonFinished" value="SendInQuestions" class="btn btn-primary">Submit questions</button>
+            }
+        </div>
+        <br /><br />
+    </div>
+</form>
+
+
+
+
+
+
+

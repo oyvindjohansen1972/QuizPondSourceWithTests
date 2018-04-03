@@ -1,0 +1,33 @@
+﻿@model AccountVM
+
+
+<div class="text-center">    
+    <h4>Register new account</h4>
+    <br />
+    <form method="post" asp-controller="Account" asp-action="Register">
+        <div asp-validation-summary="All"></div>
+
+        <div class="row justify-content-center">
+            <input asp-for="Email" placeholder="Enter email" class="form-control" style="width: 12.5em;" />
+        </div>
+
+        <br />
+
+        <div class="row justify-content-center">
+            <input asp-for="Password" placeholder="Enter password" class="form-control" style="width: 12.5em;" />
+        </div>
+
+        <br />
+
+        <div class="row justify-content-center">
+            <input asp-for="ConfirmPassword" placeholder="Enter password" class="form-control" style="width: 12.5em;" />
+        </div>
+
+        <br />
+
+        <div>
+            <button class="btn btn-primary" type="submit">Register</button>
+        </div>
+    </form>
+</div>
+

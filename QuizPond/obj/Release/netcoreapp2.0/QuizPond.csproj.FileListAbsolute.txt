@@ -1,0 +1,11 @@
+C:\Users\ojo\source\repos\QuizPond\QuizPond\bin\Release\netcoreapp2.0\QuizPond.deps.json
+C:\Users\ojo\source\repos\QuizPond\QuizPond\bin\Release\netcoreapp2.0\QuizPond.runtimeconfig.json
+C:\Users\ojo\source\repos\QuizPond\QuizPond\bin\Release\netcoreapp2.0\QuizPond.runtimeconfig.dev.json
+C:\Users\ojo\source\repos\QuizPond\QuizPond\bin\Release\netcoreapp2.0\QuizPond.dll
+C:\Users\ojo\source\repos\QuizPond\QuizPond\bin\Release\netcoreapp2.0\QuizPond.pdb
+C:\Users\ojo\source\repos\QuizPond\QuizPond\obj\Release\netcoreapp2.0\QuizPond.csproj.CoreCompileInputs.cache
+C:\Users\ojo\source\repos\QuizPond\QuizPond\obj\Release\netcoreapp2.0\QuizPond.AssemblyInfoInputs.cache
+C:\Users\ojo\source\repos\QuizPond\QuizPond\obj\Release\netcoreapp2.0\QuizPond.AssemblyInfo.cs
+C:\Users\ojo\source\repos\QuizPond\QuizPond\obj\Release\netcoreapp2.0\QuizPond.dll
+C:\Users\ojo\source\repos\QuizPond\QuizPond\obj\Release\netcoreapp2.0\QuizPond.pdb
+C:\Users\ojo\source\repos\QuizPond\QuizPond\obj\Release\netcoreapp2.0\QuizPond.csprojResolveAssemblyReference.cache
